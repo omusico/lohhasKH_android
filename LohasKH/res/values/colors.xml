@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="ClearColor">#00000000</color>
+    <color name="RedColor">#AA0000</color>
+    <color name="GreenColor">#00AA00</color>
+    <color name="BlueColor">#0000AA</color>
+    <color name="WhiteColor">#FFFFFF</color>
+    <color name="pinkIvy">#e6cde3</color>
+    <color name="whiteFlower">#e8ecef</color>
+    <color name="standardPurple">#65318e</color>
+    <color name="transparentWhite">#AAffffff</color>
+    <color name="BlackColor">#000000</color>
+    <color name="ListBackgroundColor">#FFE8CF</color>
+    <color name="GrayColor">#999999</color>
+    <color name="ListBackgroundVista">#EDF9B6</color>
+    <color name="collectButColor">#95b7e1</color>
+    <color name="shareButColor">#fe8745</color>
+    <color name="tutoButColor">#55000000</color>
+    <color name="imgbackground">#e6e6e6</color>
+    <color name="drawIconBG">#5b98d2</color>
+    
+</resources>

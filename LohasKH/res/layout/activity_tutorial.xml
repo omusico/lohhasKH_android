@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gocharm.lohaskh.TutorialActivity$PlaceholderFragment" 
+    xmlns:app="http://schemas.android.com/apk/res/com.gocharm.lohaskh">
+
+	<android.support.v4.view.ViewPager
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:id="@+id/pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:context="com.gocharm.lohaskh.TutorialActivity" />
+
+	<Button
+	    android:id="@+id/skipButton"
+	    android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:background="@color/tutoButColor"
+	    android:text="註冊  或  登入"
+	    android:textColor="@color/WhiteColor"
+	    android:textSize="@dimen/default_title_indicator_footer_indicator_underline_padding"
+	    android:textStyle="bold" />
+
+	<com.viewpagerindicator.CirclePageIndicator
+	    android:id="@+id/indicator"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/skipButton"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="44dp"
+	    android:padding="10dip"
+	    app:radius="@dimen/default_title_indicator_title_padding" />
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_margin="@dimen/default_title_indicator_footer_indicator_underline_padding"
+    tools:context="com.gocharm.lohaskh.ServiceActivity" >
+
+    <LinearLayout
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round"
+        android:orientation="vertical" >
+
+		<ScrollView
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_margin="@dimen/activity_horizontal_margin"
+		    android:layout_weight="1" >
+
+	        <TextView
+	            android:id="@+id/serviceText"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_weight="20"
+	            android:text="TextView"
+	            android:textColor="@color/BlackColor" />
+
+    	</ScrollView>
+        
+        <Button
+            android:id="@+id/ruleCloseBut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="關閉" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

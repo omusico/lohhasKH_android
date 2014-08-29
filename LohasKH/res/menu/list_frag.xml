@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lohaskh="http://schemas.android.com/apk/res-auto">
+    
+    <item android:id="@+id/action_search"
+          android:title="搜尋"
+          android:icon="@drawable/ic_search"
+          lohaskh:showAsAction="ifRoom"
+          lohaskh:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>

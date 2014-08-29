@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ClearColor" >
+
+    <ListView
+        android:id="@+id/artList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/nothing"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="center"
+        android:src="@drawable/nothing"
+        android:visibility="visible" />
+    
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loading"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/error"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/locationNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="Error encounted"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/GrayColor" />
+
+        <TextView
+            android:id="@+id/locationAddrText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAP to reload"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/GrayColor" />
+    </LinearLayout>
+
+</RelativeLayout>

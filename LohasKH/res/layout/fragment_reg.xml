@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="480dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/imgbackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/locationNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/welcome_button_height"
+        android:text="註冊帳號"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/regUserText"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/default_title_indicator_footer_indicator_underline_padding"
+        android:ems="10"
+        android:hint="帳號"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/passText1"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/default_title_indicator_footer_indicator_underline_padding"
+        android:ems="10"
+        android:hint="密碼"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/passText2"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/default_title_indicator_footer_indicator_underline_padding"
+        android:ems="10"
+        android:hint="確認密碼"
+        android:inputType="textPassword" />
+
+    <ImageButton
+        android:id="@+id/registerBut"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/default_title_indicator_footer_indicator_underline_padding"
+        android:background="@color/ClearColor"
+        android:scaleType="fitXY"
+        android:src="@drawable/register" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_title_indicator_footer_indicator_underline_padding"
+        android:layout_marginRight="@dimen/default_title_indicator_footer_indicator_underline_padding"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:text="註冊即表示我同意&lt;b>樂活玩高雄&lt;/b>的服務條款與穩私權政策" />
+
+</LinearLayout>

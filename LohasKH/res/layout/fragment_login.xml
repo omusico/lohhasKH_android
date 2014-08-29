@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="480dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/imgbackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/locationNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tutorial_skipbutton_height"
+        android:text="登入"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/listIcon"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:scaleType="centerInside"
+        android:src="@drawable/login_but" />
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="帳號" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/passText"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:ems="10"
+        android:hint="密碼"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginBut"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:background="@drawable/round_button"
+        android:text="@string/welcome_lh_login_button"
+        android:textColor="@color/WhiteColor" />
+
+</LinearLayout>

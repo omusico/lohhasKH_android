@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="480dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.gocharm.lohaskh.WelcomeActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/locationNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_title_indicator_footer_indicator_underline_padding"
+        android:layout_marginTop="@dimen/tutorial_skipbutton_height"
+        android:text="以帳號登入"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/lhLoginBut"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:background="@color/ClearColor"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_but" />
+
+    <TextView
+        android:id="@+id/locationAddrText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tutorial_skipbutton_height"
+        android:text="沒有樂活玩高雄帳號？"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/fbLoginBut"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/ClearColor"
+        android:scaleType="fitXY"
+        android:src="@drawable/fb_login_but" />
+
+    <ImageButton
+        android:id="@+id/regBut"
+        android:layout_width="213dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/ClearColor"
+        android:scaleType="fitXY"
+        android:src="@drawable/register" />
+
+</LinearLayout>

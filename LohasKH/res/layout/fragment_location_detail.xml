@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/targetMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/abc_action_bar_default_height"
+        android:layout_weight="1" >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/whiteFlower"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/locationNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="@dimen/default_title_indicator_footer_padding"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/locationAddrText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageButton
+                android:id="@+id/locationSelBut"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:background="@color/ClearColor"
+                android:scaleType="fitXY"
+                android:src="@drawable/other_palce" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dirBut"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/default_title_indicator_title_padding"
+        android:background="#fd6f91"
+        android:text="規劃路線"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:visibility="visible" />
+
+	<SlidingDrawer
+	    android:id="@+id/slidedrawer"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:content="@+id/content"
+	    android:handle="@+id/handle"
+	    android:visibility="invisible" >
+
+     <LinearLayout
+         android:id="@+id/handle"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/pinkIvy"
+         android:orientation="horizontal" >
+
+         <LinearLayout
+             android:id="@+id/handle1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/activity_horizontal_margin"
+             android:layout_marginRight="@dimen/activity_horizontal_margin"
+             android:layout_weight="1"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/routeNameText"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="@dimen/abc_dropdownitem_text_padding_right"
+                 android:layout_marginTop="@dimen/abc_dropdownitem_text_padding_right"
+                 android:ellipsize="marquee"
+                 android:singleLine="true"
+                 android:focusable="true"
+                 android:focusableInTouchMode="true"
+                 android:marqueeRepeatLimit="marquee_forever"
+                 android:text="iyjadslc gwiowejfqlux 8rqoadmsl ;30jaldfs;lnvaq09 ndisiyjadslc gwiowejfqlux 8rqoadmsl ;30jaldfs;lnvaq09 ndis"
+                 android:textAppearance="?android:attr/textAppearanceLarge" />
+
+             <TextView
+                 android:id="@+id/routeInfoText"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginBottom="@dimen/abc_dropdownitem_text_padding_left"
+                 android:text="Medium Text"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+         </LinearLayout>
+
+            
+
+        </LinearLayout>
+
+     <FrameLayout
+         android:id="@id/content"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#aec3c4" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:orientation="vertical" >
+
+             <RelativeLayout
+                 android:id="@+id/content_divider"
+                 android:layout_width="match_parent"
+                 android:layout_height="52dp"
+                 android:orientation="horizontal" >
+
+                 <Button
+                     android:id="@+id/goBut"
+                     style="?android:attr/buttonStyleSmall"
+                     android:layout_width="130dp"
+                     android:layout_height="40dp"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentTop="true"
+                     android:layout_marginBottom="7dp"
+                     android:layout_marginRight="16dp"
+                     android:layout_marginTop="@dimen/abc_action_bar_subtitle_bottom_margin"
+                     android:background="#fe8745"
+                     android:text="以此路線出發"
+                     android:textColor="#ffffff"
+                     android:textSize="20dp" />
+
+                 <Button
+                     android:id="@+id/routeSelBut"
+                     style="?android:attr/buttonStyleSmall"
+                     android:layout_width="130dp"
+                     android:layout_height="40dp"
+                     android:layout_alignParentLeft="true"
+                     android:layout_alignParentTop="true"
+                     android:layout_marginBottom="7dp"
+                     android:layout_marginLeft="16dp"
+                     android:layout_marginTop="@dimen/abc_action_bar_subtitle_bottom_margin"
+                     android:background="#5ac5cb"
+                     android:text="其它路線"
+                     android:textColor="#ffffff"
+                     android:textSize="20dp" />
+
+                 <View
+                     android:id="@+id/view1"
+                     android:layout_width="match_parent"
+                     android:layout_height="2dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_alignParentLeft="true"
+                     android:background="#8a9a9a" />
+
+             </RelativeLayout>
+
+             <ListView
+                 android:id="@+id/instructionList"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"
+                 android:dividerHeight="2dp"
+                 android:headerDividersEnabled="true"
+                 
+                 android:divider="#8a9a9a" >
+
+             </ListView>
+
+                
+
+		</LinearLayout>
+     </FrameLayout>
+
+ </SlidingDrawer>
+</FrameLayout>

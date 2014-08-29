@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/ticketList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+
+    </ListView>
+
+    <ScrollView
+        android:id="@+id/shopView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ListBackgroundColor"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shoppingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/abc_action_bar_subtitle_bottom_margin"
+                android:background="#fe8745"
+                android:gravity="center_horizontal"
+                android:text="購買資訊"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/WhiteColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:gravity="right"
+                    android:text="名稱"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/shopNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:layout_weight="1"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:gravity="right"
+                    android:text="原價"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/shopPrizeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:layout_weight="1"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:gravity="right"
+                    android:text="特價"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/shopOfferText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:layout_weight="1"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:gravity="right"
+                    android:text="數量"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/quantSpin"
+                    style="@style/spinner_style"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_left" 
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:gravity="right"
+                    android:text="小計"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/shopSumText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:layout_weight="1"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:gravity="right"
+                    android:text="稅額"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/shopTaxText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:gravity="right"
+                    android:text="總計"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/shopTotalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_circle_indicator_radius"
+                    android:layout_weight="1"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/shopPayBut"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
+                android:layout_marginRight="@dimen/abc_action_bar_progress_bar_size"
+                android:layout_marginTop="@dimen/abc_dropdownitem_text_padding_left"
+                android:background="#f47272"
+                android:text="請選擇付款方式"
+                android:textColor="@color/WhiteColor"
+                android:textSize="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:id="@+id/shopPayText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_left"
+                android:layout_marginRight="@dimen/abc_action_bar_icon_vertical_padding"
+                android:layout_marginTop="@dimen/default_circle_indicator_radius"
+                android:gravity="center_horizontal"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/shopTakeBut"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
+                android:layout_marginRight="@dimen/abc_action_bar_progress_bar_size"
+                android:layout_marginTop="@dimen/abc_dropdownitem_text_padding_left"
+                android:background="#f47272"
+                android:text="請選擇取票方式"
+                android:textColor="@color/WhiteColor"
+                android:textSize="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:id="@+id/shopTakeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/abc_dropdownitem_text_padding_left"
+                android:layout_marginRight="@dimen/abc_action_bar_icon_vertical_padding"
+                android:layout_marginTop="@dimen/default_circle_indicator_radius"
+                android:gravity="center_horizontal"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/shopCancelBut"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                    android:layout_marginLeft="@dimen/abc_action_bar_progress_bar_size"
+                    android:layout_marginRight="@dimen/default_circle_indicator_radius"
+                    android:layout_marginTop="@dimen/abc_dropdownitem_text_padding_left"
+                    android:layout_weight="1"
+                    android:background="#7088cf"
+                    android:text="取消購買"
+                    android:textColor="@color/WhiteColor"
+                    android:textSize="@dimen/activity_horizontal_margin" />
+
+                <Button
+                    android:id="@+id/shopBuyBut"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/default_circle_indicator_radius"
+                    android:layout_marginRight="@dimen/abc_action_bar_progress_bar_size"
+                    android:layout_marginTop="@dimen/abc_dropdownitem_text_padding_left"
+                    android:layout_weight="1"
+                    android:background="#fe8745"
+                    android:text="確認購買"
+                    android:textColor="@color/WhiteColor"
+                    android:textSize="@dimen/activity_vertical_margin" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

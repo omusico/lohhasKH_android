@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:lohaskh="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_favor"
+          android:title="收藏"
+          android:icon="@drawable/favor_add"
+          lohaskh:showAsAction="ifRoom" />
+    
+</menu>

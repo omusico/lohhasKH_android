@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">樂活玩高雄</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_tutorial">如何使用</string>
+    <string name="action_service">服務條款</string>
+    <string name="action_privacy">隱私政策</string>
+    <string name="title_activity_tutorial">TutorialActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tutorial_button_title">登入 或 註冊</string>
+    <string name="welcome_login_label">選擇登入帳號</string>
+    <string name="welcome_register_label">沒有樂活玩高雄帳號？</string>
+    <string name="welcome_lh_login_button">登入</string>
+    <string name="welcome_fb_login_button">FB登入</string>
+    <string name="welcome_register_button">註冊</string>
+    <string name="main_listrow_collect_button">收藏</string>
+    <string name="main_listrow_share_button">分享</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="register_warning">註冊即表示我同意&lt;b>樂活玩高雄&lt;/b>的服務條款與穩私權政策</string>
+
+    <string-array name="quantity_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>其它</item>
+    </string-array>
+    
+    <string-array name="action_list">
+        <item>美食</item>
+        <item>景點</item>
+        <item>藝文</item>
+        <item>附近</item>
+        <item>收藏</item>
+    </string-array>
+    <string-array name="drawer_titles">
+        <item>美食</item>
+        <item>景點</item>
+        <item>藝文</item>
+        <item>附近</item>
+        <item>收藏</item>
+        <item>樂活紀錄</item>
+        <item>回報與建議</item>
+        <item>評論與鼓勵</item>
+        <item>如何使用</item>
+        <item>關於</item>
+        <item>登出</item>
+    </string-array>
+
+    <array name="drawer_icons">
+        <item>@drawable/drawer1</item>
+        <item>@drawable/drawer2</item>
+        <item>@drawable/drawer3</item>
+        <item>@drawable/drawer4</item>
+        <item>@drawable/drawer5</item>
+        <item>@drawable/drawer6</item>
+        <item>@drawable/drawer7</item>
+        <item>@drawable/drawer8</item>
+        <item>@drawable/drawer9</item>
+        <item>@drawable/drawer10</item>
+        <item>@drawable/drawer11</item>
+    </array>
+
+    <string name="title_activity_art_detail">ArtDetailActivity</string>
+    <string name="title_activity_vista_detail">VistaDetailActivity</string>
+    <string name="title_activity_service">ServiceActivity</string>
+    <string name="service_text">&lt;html>
+	&lt;head>
+		&lt;title>&lt;/title>
+	&lt;/head>
+	&lt;body>
+		&lt;p>
+			服務條款&lt;/p>
+		&lt;p>
+			歡迎使用LOHAS樂活玩高雄（以下簡稱「本服務」），本服務由「高誠網路服務股份有限公司」（以下稱 「本公司」）經營，為保障使用者的權益，請務必詳細閱讀本條款的所有約定。當使用者完成本服務之使 用者註冊手續、或開始使用本服務時，即表示已閱讀、瞭解並同意接受本服務條款之所有內容，並完全接 受本服務現有與未來衍生的服務項目及內容。本公司得隨時就本條款內容進行修改、變更，若使用者於本 條款修改或變更後仍繼續使用本服務時，即表示使用者閱讀、瞭解並同意遵守該等修改或變更。&lt;/p>
+		&lt;p>
+			1 隱私權政策&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			關於使用者的註冊以及其他特定資料「隱私權政策」受到保護與規範。&lt;/p>
+		&lt;p>
+			2 使用者帳號、密碼及安全&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			1. 完成本服務的註冊程序之後，使用者將取得一個特定之密碼及使用者帳號，維持&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			2. 使用者同意以下事項：&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			密碼及帳號之機密安全，是使用者的責任。任何依照規定方法輸入使用者帳號及 密碼與登入資料一致時，無論是否由本人親自輸入，均將推定為使用者本人所使 用，利用該密碼及帳號所進行的一切行動，使用者本人應負完全責任。&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			(1) 使用者的密碼或帳號遭到盜用或有其他任何安全問題發生時，使用者將 立即通知本服務。&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			(2) 使用者的帳號、密碼及使用者權益均僅供使用者個人使用及享有，不得轉 借、轉讓他人或與他人合用。&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			(3) 帳號及密碼遭盜用、不當使用或其他本服務無法辯識是否為本人親自使用之 情況時，對此所致之損害，除證明係因可歸責於本服務之事由所致，本服務 將不負任何責任。&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			(4) 本服務若知悉使用者之帳號密碼確係遭他人冒用時，將立即暫停該帳號之使 用。&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			3 服務之終止、中斷&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			本服務保留隨時停止或更改各項服務內容或終止任一使用者帳戶之權利，且無需事先通知使 用者。停止或更改服務所產生之不便或損害，本服務對任何使用者不負任何責任。發生下列情形之 一時，本服務將暫停或中斷本服務之全部或一部分：&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			1. 本服務相關軟硬體進行必要之升級、保養及維修時&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			2. 發生突發性之電子通信設備故障時&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			3. 本服務申請之電子通信服務被停止，無法提供服務時&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			4. 由於天災等不可抗力之因素或其他不可歸責致使無法提供服務時&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			4 免責聲明&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			1. 使用者瞭解本服務上刊登之商業廣告及各種商品之促銷資訊等內容，均 係由廣告商或商品服務提供者所為，本服務僅提供刊登內容之媒介。使用者透 過本服務上所提供之商品、服務資訊，所購買之任何商品或服務，其交易關係 均存在於使用者與商品或服務提供者間，與本服務無關。&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			2. 本服務將不會為下列原因所引發的損失或傷害而負賠償責任，包括但不限於，任 何執行的失誤、錯誤、遺漏、中斷、缺失、傳輸的延誤、電腦病毒、或線路故障。本服 務將不會為任何損失或傷害而負賠償責任，包括但不限於，因使用或不當使用本網站內 容而導致的特殊或因此而產生的損失，即使本服務疏忽或已告知可能造成此類損失。&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			5 智慧財產權 本服務上之所有著作及資料，其著作權、專利權、商標、營業秘密、其他智慧財產權、所有 權或其他權利，均為本服務或其權利人所有，除事先經本服務或其權利人之合法授權外，使用者及 其他第三者不得擅自重製、傳輸、改作、編輯或以其他任何形式、基於任何目的加以使用，否則應 負所有法律責任。&lt;/p>
+	&lt;/body>
+&lt;/html></string>
+    <string name="privacy_text">        &lt;html>
+	&lt;head>
+		&lt;title>&lt;/title>
+	&lt;/head>
+	&lt;body>
+		&lt;p>
+			隱私權政策&lt;/p>
+		&lt;p>
+			LOHAS樂活玩高雄（以下簡稱「本服務」）由「高誠網路服務股份有限公司」（以下稱「本公司」）經 營，我們非常重視使用者的隱私權且遵循「個人資料保護法」之規定，因此制訂了隱私權保護政策，您可 參考下列隱私權保護政策的內容。&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			一、個人資料之安全 保護使用者的個人隱私是本平台重要的經營理念，當您註冊登入本服務時，即表示您已閱讀、瞭解 並同意接受本服務條款之所有內容，包含使用者電子郵件或其後使用本服務所提供或產生之數據資料。在 未經使用者同意之下，我們絕不會將使用者的個人資料提供予任何與本站服務無關之第三人。使用者應妥 善保密自己的網路密碼及個人資料，不要將任何個人資料，尤其是網路密碼提供給任何人。如有安全疑 慮，在結束使用本服務後自行登出帳號。&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			二、 個人資料的利用 本服務對於使用者資料利用之目的例示如下：&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			1. 當註冊登入使用本平台提供之部份服務時，於頁面中自動顯示使用者資訊。&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			2. 使用者透過電子郵件、電話或其他任何直接間接連絡方式向本服務所提出之詢問或回覆，本服務 向使用者進行回覆。&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			3. 提供個別服務時，亦可能於上述規定之目的以外，利用個人資料。此時將在該個別服務之網頁載 明其要旨。&lt;/p>
+		&lt;p style="margin-left: 40px;">
+			三、資料的安全 為保障使用者的隱私及安全，本服務使用者帳號資料會用密碼保護。本服務盡力以合理之技術及程 序，保障所有個人資料之安全。 四、個人資料查詢或更正的方式&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			1. 使用者對於其個人資料，有查詢及閱覽、製給複製本、補充或更正、停止電腦處理及利用、 刪除等需求時，立即聯絡我們 ，本服務將迅速進行處理。&lt;/p>
+		&lt;p style="margin-left: 80px;">
+			2. 刪除、解除安裝本A PP，將不會刪除您的使用者資料，若您想要修改、停用、刪除您的個人資 料或聯絡方式，或有任何建議，歡迎您直接於「回報與建議」來信告知。&lt;/p>
+	&lt;/body>
+&lt;/html></string>
+    <string name="title_activity_tracing">TracingActivity</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/ticketDisplayBut"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/default_circle_indicator_radius"
+            android:layout_weight="1"
+            android:background="@color/ClearColor"
+            android:scaleType="fitXY"
+            android:src="@drawable/ticket_hide" />
+
+        <ImageButton
+            android:id="@+id/vistaDisplayBut"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/default_circle_indicator_radius"
+            android:layout_weight="1"
+            android:background="@color/ClearColor"
+            android:scaleType="fitXY"
+            android:src="@drawable/vista_hide" />
+
+        <ImageButton
+            android:id="@+id/artsDisplayBut"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/default_circle_indicator_radius"
+            android:layout_weight="1"
+            android:background="@color/ClearColor"
+            android:scaleType="fitXY"
+            android:src="@drawable/art_hide" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </FrameLayout>
+
+</LinearLayout>

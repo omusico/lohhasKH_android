@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gocharm.lohaskh"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name=".googlemap.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name=".googlemap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:name="myApp">
+        <meta-data
+            android:name="coim_app_key"
+            android:value="e9656f63-6335-174e-bc16-67ec4bf4f737" />
+        <meta-data
+            android:name="coim_app_code"
+            android:value="lohasKH" />
+        
+        <meta-data
+            android:name="coim_debug"
+            android:value="true" />
+        
+        <meta-data
+            android:name="coim_test_server"
+            android:value="true" />
+        
+        <meta-data
+            android:name="coim_fb_app_id"
+            android:value="\ 1449518848601506" />
+        
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDGuBOvDl1T6fXIPaYhnMteGXxYJ4ENB4c" />
+
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.gocharm.lohaskh.SplashActivity"
+            android:label="@string/app_name"
+            
+            android:theme="@style/NoTitle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.gocharm.lohaskh.TutorialActivity"
+            android:label="@string/title_activity_tutorial"
+            android:theme="@style/NoTitle" >
+        </activity>
+        <activity
+            android:name="com.gocharm.lohaskh.WelcomeActivity"
+            android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name="com.gocharm.lohaskh.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.gocharm.lohaskh.ArtDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_art_detail" >
+        </activity>
+        <activity
+            android:name="com.gocharm.lohaskh.VistaDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_vista_detail" >
+        </activity>
+        <activity
+            android:name="com.gocharm.lohaskh.TicketDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_vista_detail" >
+        </activity>
+        
+        <activity
+            android:name="com.gocharm.lohaskh.ServiceActivity"
+            android:label="@string/title_activity_service"
+            android:theme="@style/NoTitle" >
+        </activity>
+        
+        <activity
+            android:name="com.gocharm.lohaskh.RouteActivity"
+            android:label="@string/title_activity_vista_detail" >
+        </activity>
+        
+        <service android:name="com.gocharm.lohaskh.TracingService"/>
+        
+        <activity
+            android:name="com.gocharm.lohaskh.TracingActivity"
+            android:label="@string/title_activity_tracing" >
+            <intent-filter>
+                <action android:name="com.gocharm.lohaskh.tracing" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
